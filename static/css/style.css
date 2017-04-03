@@ -1,0 +1,118 @@
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    font-family: Arial;
+    font-size: 16px;
+    color: #000;
+}
+
+ul, ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* nav */
+
+.nav {
+    width: 25%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.nav .choose-data {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.nav .choose-data .links {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.nav .choose-data .links a {
+    display: block;
+    width: 45%;
+    font-size: 14px;
+    padding: 5px 0;
+    border: 1px solid #333;
+    transition: .5s;
+}
+
+.nav .choose-data .links a.active {
+    background: #333;
+    color: #eee;
+}
+
+.nav .loading {
+    padding: 20px;
+    text-align: center;
+}
+
+.nav li a {
+    padding: 25px 30px;
+    display: block;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.nav li.active a {
+    background: #ddd;
+}
+
+.nav li a .img {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 20px;
+}
+
+.nav li a .img img {
+    margin-left: 20px;
+    transition: .5s;
+}
+
+.nav li.active a .img img {
+    transform: scale(1.2);
+}
+
+.nav li a .reader {
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* content */
+
+.content {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    padding: 5% 10%;
+    border-left: 3px solid #999;
+}
+
+.content .empty {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    color: #999;
+}
