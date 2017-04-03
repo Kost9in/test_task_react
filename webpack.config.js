@@ -40,7 +40,8 @@ module.exports = {
       inject: false
     }),
     new CopyWebpackPlugin([
-        { from: 'static' }
+        { from: 'static/css' },
+        { from: 'static/img' }
     ])
   ],
   module: {
