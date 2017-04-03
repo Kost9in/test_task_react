@@ -11,7 +11,7 @@ class NavItem extends Component {
             <li className={className}>
                 <a onClick={onChooseBook.bind(this, bookId)}>
                     <div className="img">
-                        <img src="/book.svg" alt=""/>
+                        <img src="book.svg" alt=""/>
                         <span>{title}</span>
                     </div>
                     {reader ? (<p className="reader">{reader}</p>) : ''}
